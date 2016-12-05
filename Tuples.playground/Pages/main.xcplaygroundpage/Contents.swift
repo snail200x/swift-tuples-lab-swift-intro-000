@@ -18,8 +18,7 @@
 
 
 
-
-
+var person = (name: "Jim", age: 30)
 
 
 
@@ -28,7 +27,7 @@
  */
 // write your code here
 
-
+print("\(person.name) is \(person.age) years old")
 
 
 
@@ -42,7 +41,8 @@
 
 
 
-
+person.age += 1
+print("\(person.name) is \(person.age) years old")
 
 
 
@@ -65,6 +65,7 @@
 // write your code here
 
 
+var someone = (name:person.name, age:person.age)
 
 
 
@@ -76,7 +77,7 @@
  */
 // write your code here
 
-
+print("\(someone.name) is \(someone.age) years old")
 
 
 
@@ -88,9 +89,10 @@
 // write your code here
 
 
+someone.age += 1
 
-
-
+print("\(person.name) is \(person.age) years old")
+print("\(someone.name) is \(someone.age) years old")
 
 
 /*:
@@ -112,7 +114,7 @@
 
 
 
-
+let anotherOne = (name:person.name, age:person.age)
 
 
 
@@ -122,7 +124,7 @@
  */
 
 
-
+anotherOne.name = "David" // error , can not change constant anotherOne
 
 
 
